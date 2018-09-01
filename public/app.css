@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+  font-family: BrixSansRegular;
+  src: url("fonts/BrixSansRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* style */
+.hidden {
+  display: none !important;
+}
+.bold {
+  font-weight: 600;
+}
+.more {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  color: #82829C;
+}
+body {
+  font-family: BrixSansRegular;
+  background: #f2f2f2;
+}
+.box {
+  margin: 10px auto;
+  max-width: 450px;
+  background: white;
+  border-radius: 10px;
+  user-select: none;
+}
+.box-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1.5px solid #E0E9F1;
+}
+.box-title {
+  color: #666AFB;
+  font-size: 28px;
+}
+.box-subtitle {
+  color: #9B9CB3;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.tasks {
+  color: #9B9CB3;
+  font-size: 18px;
+}
+#addTodo {
+  position: absolute;
+  bottom: -25px; right: 25px;
+  font-family: BrixSansRegular;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  background: url("img/plusbg.png");
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease-in;
+}
+#addTodo:hover {
+  transition: transform 0.15s ease-in;
+  transform: rotate(90deg);
+}
+.box-li {
+  padding-top: 25px;
+  position: relative;
+  border-left: 5px solid transparent;
+  border-bottom: 0.8px solid #E0E9F1;
+}
+.box-li:hover {
+  border-left: 5px solid #FF6B6C;
+}
+.box-li-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  cursor: pointer;
+}
+.box-li-wrapper .right {
+  color: #CACBDB;
+  font-weight: 500;
+  font-size: 14px;
+}
+.box-li-wrapper p {
+  display: inline-block;
+  color: #82829C;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 10px;
+}
+.input {
+  /* border-bottom: 0.8px solid #E0E9F1; */
+  padding: 30px 25px 5px 25px;
+}
+.down {
+  display: flex;
+}
+.delete,
+.update {
+  font-family: BrixSansRegular;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  height: 35px;
+  width: 50%;
+  color: white;
+}
+.delete {
+  background: #ff7979;
+}
+.delete:hover {
+  background: rgb(252, 101, 101);
+}
+.update {
+  background: #f6e58d;
+}
+.update:hover {
+  background: #eeda76;
+}
+.completed {
+  opacity: 0.2;
+}
+input[type="text"] {
+  width: 90%;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px rgba(0,0,0, 0.2);
+}
