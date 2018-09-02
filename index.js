@@ -15,6 +15,6 @@ app.get("/", function(req, res) {
 });
 
 
-app.listen(process.env.PORT || 3000, process.env.IP, function() {
+app.listen(8080, function() {
   console.log("==========START============");
 });
